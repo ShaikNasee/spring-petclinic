@@ -1,5 +1,5 @@
 pipeline{
-    node{label "mvn-3.8.6"}
+    agent{label "mvn-3.8.6"}
     stages{
         stage("source code management git"){
             steps{
