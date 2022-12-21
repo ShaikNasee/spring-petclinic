@@ -8,7 +8,7 @@ pipeline{
         }
         stage("maven build "){
             steps{
-                sh "mvn clean package "
+                sh " /usr/local/apache-maven-3.8.6/bin/mvn clean package "
             }
         }
         stage("archive artifacts"){
